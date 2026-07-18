@@ -47,11 +47,11 @@ export const Header = memo(function Header() {
           aria-label="Main navigation"
         >
           <div className="flex flex-row items-start gap-3">
-              <Image src="/images/onurhan_demir.png" className="size-[74px] rounded-lg border border-foreground/10 bg-foreground/4 object-cover shadow-sm" alt="Onurhan Demir" width={100} height={100} />
+              <Image src="/images/avatar.png" className="size-[74px] rounded-lg border border-foreground/10 bg-foreground/4 object-cover shadow-sm" alt="Cédrick Emmanuel" width={100} height={100} />
             <div className="flex flex-col items-start">
               <div className="flex flex-col items-start pb-2">
-                <span className="text-base font-medium">Onurhan Demir</span>
-                <span className="text-sm opacity-50 tracking-tight leading-tight">developer advocate · frontend</span>
+                <span className="text-base font-medium">Cédrick Emmanuel</span>
+                <span className="text-sm opacity-50 tracking-tight leading-tight">developpeur web · Backend</span>
               </div>
               {appConfig.availability.enabled && (
                 <AvailabilityBadge onClick={() => setIsDialogOpen(true)} />

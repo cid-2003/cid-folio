@@ -35,17 +35,17 @@ https://onurhan.dev
 This application requires Node.js v16.13+.
 
 ```bash
-git clone https://github.com/onurhan1337/my-website.git
-cd my-website
+git clone https://github.com/cid-2003/cid-folio.git
+cd cid-folio
 pnpm install
 pnpm dev
 ```
 
-Create a `.env` file similar to [`.env.example`](https://github.com/onurhan1337/my-website/blob/master/.env.example). You don't need to fill them out for the site to work.
+Create a `.env` file similar to [`.env.example`](https://github.com/cid-2003/cid-folio/blob/master/.env.example). You don't need to fill them out for the site to work.
 
 ## Cloning / Forking
 
-Please review the [license](https://github.com/onurhan1337/my-website/blob/master/LICENSE.txt) and remove all of my personal information (resume, blog posts, images, etc.).
+Please review the [license](https://github.com/cid-2003/cid-folio/blob/master/LICENSE.txt) and remove all of my personal information (resume, blog posts, images, etc.).
 
 ## Getting Started
 
@@ -67,6 +67,6 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Deployment
 
-Deployed on [Cloudflare Pages](https://pages.cloudflare.com/) as a pure static export (`output: "export"`). All HTML is generated at build time, so MDX content is read from the filesystem during the build and served as plain static files from the CDN.
+Deployed on [Vercel Pages](https://vercel.com/) as a pure static export (`output: "export"`). All HTML is generated at build time, so MDX content is read from the filesystem during the build and served as plain static files from the CDN.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

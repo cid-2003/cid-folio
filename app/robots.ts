@@ -16,7 +16,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://onurhan.dev/sitemap.xml",
+    sitemap: "https://cid-folio.vercel.app/sitemap.xml",
     host: "https://onurhan.dev",
   };
 }

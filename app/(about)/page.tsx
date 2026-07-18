@@ -7,26 +7,19 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Onurhan Demir is a Developer Advocate & Frontend Developer at ikas, specializing in developer ecosystems, UX-focused interfaces, and e-commerce solutions. Based in Turkey.",
+    "Cédrick Emmanuel est un Développeur Web orienté Backend, avec une bonne maîtrise du Frontend.",
   keywords: [
-    "Onurhan Demir",
-    "Onurhan Demir About",
-    "Onurhan Demir Developer Advocate",
-    "Onurhan Demir Türkiye",
-    "Developer Advocate",
-    "Frontend Developer",
-    "Full Stack Developer",
-    "Software Developer Turkey",
-    "Yazılım Geliştirici Türkiye",
-    "Full Stack Developer Türkiye",
-    "ikas developer",
-    "e-commerce development",
-    "UX development",
+    "Cédrick Emmanuel",
+    "Cédrick Emmanuel About",
+    "Cédrick Emmanuel Developpeur Backend",
+    "Cédrick Emmanuel Cotonou",
+    "Developeur Web",
+    "MISSEHOUNGBE Cédrick Emmanuel | Developpeur Cotonou",
   ],
   openGraph: {
-    title: "About | Onurhan Demir",
+    title: "About | Cédrick Emmanuel",
     description:
-      "Onurhan Demir is a Developer Advocate & Frontend Developer at ikas, focused on developer ecosystems, UX, and e-commerce solutions. Based in Turkey.",
+      "Cédrick Emmanuel est un Développeur Web orienté Backend, avec une bonne maîtrise du Frontend.",
     url: "https://onurhan.dev",
   },
   alternates: {
@@ -37,69 +30,65 @@ export const metadata: Metadata = {
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Onurhan Demir",
-  alternateName: "Onurhan",
-  jobTitle: "Developer Advocate & Frontend Developer",
+  name: "Cédrick Emmanuel",
+  alternateName: "Cid",
+  jobTitle: "Developpeur Web & Backend Developpeur",
   url: "https://onurhan.dev",
   description:
-    "Developer Advocate & Frontend Developer at ikas, focused on developer ecosystems, UX, and e-commerce solutions. Building useful digital products with modern web technologies.",
+    "Je transforme des idées en applications web modernes grâce à Next.js, Laravel et React etc...",
   knowsAbout: [
     "Software Development",
     "Web Development",
-    "Product Development",
-    "UX Design",
     "E-commerce Development",
-    "Shopify",
-    "Ikas",
     "React",
     "Next.js",
     "TypeScript",
     "JavaScript",
-    "Yazılım Geliştirme",
-    "Web Geliştirme",
-    "Ürün Geliştirme",
+    "Laravel",
+    "WordPress",
   ],
   sameAs: [
-    "https://github.com/onurhan1337",
-    "https://youtube.com/@onurhandev",
-    "https://x.com/onurhan1337",
-    "https://kizzle.studio",
+    "https://github.com/cid-2003",
+    "https://gravatar.com/cedrickdonald29",
   ],
   worksFor: {
     "@type": "Organization",
-    name: "ikas",
-    url: "https://ikas.com",
+    name: "PrimoCom",
+    url: "https://www.primocom.net",
     description:
-      "E-commerce platform company building tools for merchants and developers.",
+      "PrimoCom | Agence de communication digitale.",
   },
   address: {
     "@type": "PostalAddress",
-    addressCountry: "TR",
-    addressLocality: "Turkey",
-    alternateName: "Türkiye",
+    addressCountry: "BN",
+    addressLocality: "Bénin",
+    alternateName: "Benin",
   },
   nationality: {
     "@type": "Country",
-    name: "Turkey",
-    alternateName: "Türkiye",
+    name: "Bénin",
+    alternateName: "Benin",
   },
   jobLocation: {
     "@type": "Place",
-    name: "Turkey",
-    alternateName: "Türkiye",
+    name: "Bénin",
+    alternateName: "Benin",
     address: {
       "@type": "PostalAddress",
       addressCountry: "TR",
-      addressLocality: "Turkey",
+      addressLocality: "Bénin",
     },
   },
 };
 
 export default function About() {
   const paragraphs = [
-    `I'm a Developer Advocate & Frontend Developer at ikas, where I help grow the developer ecosystem and build products and experiences for the platform. My focus is on shipping practical, maintainable solutions that improve the merchant and developer experience.`,
-    `I move fast and iterate. Ship, gather feedback, improve, repeat. I write clean, maintainable code while keeping velocity high. Balance matters—quality and speed go hand in hand.`,
-    `Outside of work, I'm still experimenting with new tech and building side projects. Always learning, always building, always shipping.`,
+    `Basé à Cotonou (Bénin), je développe principalement avec Next.js, Laravel, React, Prisma et Docker. J'aime construire des produits utiles, apprendre en permanence et relever de nouveaux défis techniques.`,
+    `Je suis développeur web spécialisé en Backend avec une solide compréhension du développement Frontend. Au fil de mes projets, j'ai acquis de l'expérience dans la conception d'applications web modernes, de la base de données jusqu'à l'interface utilisateur.`,
+    `Ma façon de travailler
+J'accorde une grande importance à la qualité du code, à la performance et à la simplicité. J'aime concevoir des architectures claires, écrire du code maintenable et développer des solutions qui répondent à de vrais besoins.`,
+    `Ce qui me motive
+Chaque nouveau projet est pour moi l'occasion d'apprendre, d'expérimenter et de progresser. Qu'il s'agisse de créer une plateforme complète avec Next.js ou une API robuste avec Laravel, j'aime relever des défis techniques et transformer des idées en produits fonctionnels.`,
   ];
 
   return (
@@ -108,7 +97,7 @@ export default function About() {
       className="prose prose-zinc container animate-enter"
     >
       <p className="text-lg font-medium tracking-tight mb-8">
-        Hi, I&apos;m Onurhan.
+        Salut, c'est Cid.
       </p>
       {paragraphs.map((paragraph, index) => (
         <div

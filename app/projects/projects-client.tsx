@@ -10,22 +10,22 @@ interface ProjectsClientProps {
   projects: Project[];
 }
 
-const tabs = ["all", "open-source", "e-commerce", "web", "saas"] as const;
+const tabs = ["Tous", "Application Web", "Plateforme éducative", "Site", "Blog"] as const;
 type Tab = (typeof tabs)[number];
 
 const tabLabels: Record<Tab, string> = {
-  all: "All",
-  "open-source": "Open Source",
-  "e-commerce": "E-Commerce",
-  web: "Web",
-  saas: "SaaS",
+  Tous: "Tous",
+  "Application Web": "Open Source",
+  "Plateforme éducative": "Plateforme éducative",
+  Site: "Site",
+  Blog: "Blog ",
 };
 
 export function ProjectsClient({ projects }: ProjectsClientProps) {
-  const [activeTab, setActiveTab] = useState<Tab>("all");
+  const [activeTab, setActiveTab] = useState<Tab>("Tous");
 
   const filtered =
-    activeTab === "all"
+    activeTab === "Tous"
       ? projects
       : projects.filter((p) => p.category === activeTab);
 
@@ -51,7 +51,8 @@ export function ProjectsClient({ projects }: ProjectsClientProps) {
         transition={{ duration: 0.4 }}
         className="mb-2 text-[15px] leading-relaxed opacity-80"
       >
-        A collection of projects I&apos;ve worked on.
+        Au fil de mon apprentissage et de mes expériences, j'ai eu l'occasion de concevoir plusieurs applications et sites web répondant à différents besoins.
+Ces projets m'ont permis d'explorer différentes technologies, d'améliorer mes compétences en développement frontend et backend, et de transformer des idées en solutions concrètes.
       </motion.p>
 
       <div className="flex items-center gap-6 mt-8 mb-10">

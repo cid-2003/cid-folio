@@ -11,11 +11,11 @@ import { useThoughtsStore } from "@/stores/thoughts-store";
 const THOUGHTS_PER_PAGE = 8;
 
 const typeFilters = [
-  { key: "all", label: "All" },
-  { key: "code", label: "Code" },
-  { key: "idea", label: "Idea" },
-  { key: "quote", label: "Quote" },
-  { key: "book", label: "Book" },
+  { key: "tous", label: "Tous" },
+  { key: "développement", label: "Développement" },
+  { key: "lecture", label: "Lecture" },
+  { key: "sport", label: "Sport" },
+  { key: "passions", label: "Passions" },
 ] as const;
 
 const filterLabelMap = new Map(typeFilters.map((f) => [f.key, f.label]));
@@ -30,7 +30,7 @@ export function ThoughtsClient({ thoughts }: ThoughtsClientProps) {
   const { paginatedThoughts, totalPages, hasNextPage, hasPreviousPage } =
     useMemo(() => {
       const filteredThoughts =
-        filter === "all"
+        filter === "tous"
           ? thoughts
           : thoughts.filter((thought) => thought.metadata.type === filter);
 
@@ -53,7 +53,7 @@ export function ThoughtsClient({ thoughts }: ThoughtsClientProps) {
     }, [thoughts, page, filter]);
 
   const isEmpty = paginatedThoughts.length === 0;
-  const filterLabel = filterLabelMap.get(filter) || "All";
+  const filterLabel = filterLabelMap.get(filter) || "Tous";
 
   return (
     <div className="pb-32">
@@ -66,7 +66,7 @@ export function ThoughtsClient({ thoughts }: ThoughtsClientProps) {
         >
           <div className="mb-6 text-6xl opacity-10">—</div>
           <p className="text-sm tracking-tight opacity-50 mb-2">
-            No {filter === "all" ? "thoughts" : filterLabel.toLowerCase()} yet
+            No {filter === "tous" ? "thoughts" : filterLabel.toLowerCase()} yet
           </p>
           <p className="text-xs tracking-wider opacity-30">
             Simplicity is the ultimate sophistication
@@ -102,7 +102,7 @@ export function ThoughtsClient({ thoughts }: ThoughtsClientProps) {
       {totalPages > 1 && (
         <nav
           aria-label="Thoughts pagination"
-          className="flex justify-center gap-4 mt-12"
+          className="flex justify-center gap-4 mt-10"
         >
           <Button
             onClick={() => setPage(page - 1)}

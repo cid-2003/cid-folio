@@ -4,6 +4,8 @@ import type { SocialButtonProps } from "@/types";
 import IconArrowRightUp from "./shared/icons/arrow-right-up";
 import IconGithub from "./shared/icons/github";
 import IconX from "./shared/icons/x";
+import GravatarIcon from "./shared/icons/gravatar";
+import CvIcon from "./shared/icons/cv";
 
 import Link from "next/link";
 
@@ -27,16 +29,22 @@ function SocialButton({ href, children }: SocialButtonProps) {
 export default function Social() {
   return (
     <div className="flex flex-col gap-2 md:flex-row md:gap-2">
-      <SocialButton href="https://github.com/onurhan1337">
+      <SocialButton href="https://github.com/cid-2003">
         <div className="flex flex-row items-center">
           <IconGithub />
           <span className="ml-3 text-[15px] tracking-tight">Github</span>
         </div>
       </SocialButton>
-      <SocialButton href="https://x.com/onurhan1337">
+      <SocialButton href="https://gravatar.com/cedrickdonald29">
         <div className="flex flex-row items-center">
-          <IconX />
-          <span className="ml-3 text-[15px] tracking-tight">X / Twitter</span>
+          <GravatarIcon />
+          <span className="ml-3 text-[15px] tracking-tight">Gravatar</span>
+        </div>
+      </SocialButton>
+      <SocialButton href="https://flowcv.com/resume/0h3bif9hvngf">
+        <div className="flex flex-row items-center">
+          <CvIcon />
+          <span className="ml-3 text-[15px] tracking-tight">CV</span>
         </div>
       </SocialButton>
     </div>

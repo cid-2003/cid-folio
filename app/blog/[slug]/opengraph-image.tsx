@@ -18,7 +18,7 @@ export default async function OGImage({
   params: { slug: string };
 }) {
   const post = await getBlogPost(params.slug);
-  const title = post?.metadata.title ?? "Onurhan Demir";
+  const title = post?.metadata.title ?? "Cédrick Emmanuel";
 
   return new ImageResponse(
     (

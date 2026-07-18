@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-type FilterKey = "all" | "code" | "idea" | "quote" | "book";
+type FilterKey = "tous" | "développement" | "lecture" | "sport" | "passions";
 
 interface ThoughtsState {
   filter: FilterKey;
@@ -10,7 +10,7 @@ interface ThoughtsState {
 }
 
 export const useThoughtsStore = create<ThoughtsState>((set) => ({
-  filter: "all",
+  filter: "tous",
   page: 1,
   setFilter: (filter) => set({ filter, page: 1 }),
   setPage: (page) => set({ page }),

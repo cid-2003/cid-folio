@@ -33,8 +33,8 @@ export const blogMetadataSchema = z.object({
  * Schema for thought metadata validation
  */
 export const thoughtMetadataSchema = z.object({
-  type: z.enum(["code", "idea", "quote", "book"], {
-    message: "Type must be one of: code, idea, quote, book",
+  type: z.enum(["développement", "lecture", "sport", "passions"], {
+    message: "Type must be one of: développement, lecture, sport, passions",
   }),
   createdAt: z
     .string()

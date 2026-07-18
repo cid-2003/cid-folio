@@ -7,25 +7,25 @@ import { getAllBlogPostsList } from "../db/blog";
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Read Onurhan Demir's thoughts on software development, design, React, Next.js, TypeScript, and modern web technologies. Articles about building web applications and B2B SaaS solutions.",
+    "J'y partage mes expériences, les défis rencontrés au cours de mes projets ainsi que les technologies que j'explore. Chaque article est une occasion de documenter ce que j'apprends et de partager des solutions qui pourront être utiles à d'autres développeurs.",
   keywords: [
-    "Onurhan Demir Blog",
-    "Software Development Blog",
+    "Cédrick Emmanuel Blog",
+    "Developpement web Blog",
     "React Blog",
     "Next.js Blog",
     "TypeScript Blog",
     "Web Development Articles",
   ],
   openGraph: {
-    title: "Blog | Onurhan Demir",
+    title: "Blog | Cédrick Emmanuel",
     description:
-      "Read Onurhan Demir's thoughts on software development, design, and modern web technologies.",
-    url: "https://onurhan.dev/blog",
+      "J'y partage mes expériences, les défis rencontrés au cours de mes projets.",
+    url: "https://cid-folio.vercel.app/blog",
   },
   alternates: {
-    canonical: "https://onurhan.dev/blog",
+    canonical: "https://cid-folio.vercel.app/blog",
     types: {
-      "application/rss+xml": "https://onurhan.dev/feed.xml",
+      "application/rss+xml": "https://cid-folio.vercel.app/feed.xml",
     },
   },
 };
@@ -40,18 +40,18 @@ export default async function Blog() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "@id": `${baseUrl}/blog`,
-    name: "Blog | Onurhan Demir",
+    name: "Blog | Cédrick Emmanuel",
     description:
-      "Read Onurhan Demir's thoughts on software development, design, React, Next.js, TypeScript, and modern web technologies. Articles about building web applications and B2B SaaS solutions.",
+      "J'y partage mes expériences, les défis rencontrés au cours de mes projets ainsi que les technologies que j'explore. Chaque article est une occasion de documenter ce que j'apprends et de partager des solutions qui pourront être utiles à d'autres développeurs.",
     url: `${baseUrl}/blog`,
     mainEntity: {
       "@type": "Blog",
-      name: "Onurhan Demir's Blog",
+      name: "Cédrick Emmanuel's Blog",
       description:
-        "Software development articles, tutorials, and insights on React, Next.js, TypeScript, and modern web technologies.",
+        "Chaque article est une occasion de documenter ce que j'apprends et de partager des solutions qui pourront être utiles à d'autres développeurs.",
       author: {
         "@type": "Person",
-        name: "Onurhan Demir",
+        name: "Cédrick Emmanuel",
         url: baseUrl,
       },
       blogPost: posts.map((post) => ({

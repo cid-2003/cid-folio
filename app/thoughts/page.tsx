@@ -2,25 +2,27 @@ import { ThoughtsClient } from "./thoughts-client";
 import { getThoughts } from "@/app/db/thoughts";
 import Container from "@/components/shared/container";
 import type { Metadata } from "next";
+import Social from "@/components/social";
+import { WavySeparator } from "@/components/shared/wavy-separator";
 
 export const metadata: Metadata = {
   title: "Thoughts",
   description:
-    "Quick thoughts, ideas, code snippets, quotes, and book notes by Onurhan Demir. Insights on software development, technology, and learning.",
+    "Développement, Lecture, Sport, Passions, tous savoir sur Cédrick Emmanuel..",
   keywords: [
-    "Onurhan Demir Thoughts",
-    "Onurhan Demir Ideas",
-    "Software Development Thoughts",
+    "Cédrick Emmanuel Thoughts",
+    "Cédrick Emmanuel Passions",
+    "Developpeur web Thoughts",
     "Tech Notes",
   ],
   openGraph: {
-    title: "Thoughts | Onurhan Demir",
+    title: "Thoughts | Cédrick Emmanuel",
     description:
-      "Quick thoughts, ideas, code snippets, quotes, and book notes by Onurhan Demir.",
-    url: "https://onurhan.dev/thoughts",
+      "Développement, Lecture, Sport, Passions, tous savoir sur Cédrick Emmanuel.",
+    url: "https://cid-folio.vercel.app/thoughts",
   },
   alternates: {
-    canonical: "https://onurhan.dev/thoughts",
+    canonical: "https://cid-folio.vercel.app/thoughts",
   },
 };
 
@@ -42,6 +44,9 @@ export default async function ThoughtsPage() {
   return (
     <Container size="large">
       <ThoughtsClient thoughts={thoughtsWithContent} />
+      <WavySeparator />
+      <Social />  
+      <WavySeparator />
     </Container>
   );
 }

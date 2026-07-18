@@ -26,7 +26,7 @@ export const AvailabilityBadge = memo(function AvailabilityBadge({
         <span className="absolute inline-flex h-full w-full rounded-full bg-foreground opacity-30 animate-pulse"></span>
         <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-foreground opacity-70"></span>
       </span>
-      <span className="opacity-75">working at ikas</span>
+      <span className="opacity-75">À propos de moi</span>
     </button>
   );
 });

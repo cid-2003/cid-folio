@@ -5,81 +5,42 @@ import { WavySeparator } from "@/components/shared/wavy-separator";
 
 const workExperiences = [
   {
-    company: "ikas",
-    role: "Developer Advocate & Frontend Developer",
-    period: "Jun 2026 — Present",
+    company: "SAV+",
+    role: "Stagiaire Support & Web ",
+    period: "Novembre 2023 — Avril 2024",
     description:
-      "At ikas, I work across Developer Relations and frontend, helping grow the developer ecosystem around the app store, theme store, and Studio. I bridge developers, agencies, and the product teams while building toward a better developer and merchant experience.",
+      "Cette première expérience professionnelle m'a permis de découvrir le fonctionnement d'une entreprise, le support technique et la relation client. J'ai participé à la gestion de demandes utilisateurs, au suivi de projets et à l'amélioration de certains processus internes.",
     achievements: [
-      "Supporting the growth of the ikas developer ecosystem across the app store, theme store, and Studio.",
-      "Improving the Studio experience with frontend and component work that makes stores easier to customize.",
-      "Producing technical content, examples, and guides to help developers build apps, themes, and components on ikas.",
-      "Exploring AI-assisted Studio ideas to help non-technical merchants solve their own needs.",
-      "Bringing developer and merchant feedback back to the product teams to shape the platform.",
+      "Support technique — Assistance aux utilisateurs et résolution de problèmes courants.",
+      "Relation client — Comprendre les besoins et apporter des réponses adaptées.",
+      "Communication — Échanger efficacement avec les équipes et les clients.",
+      "Organisation — Gérer plusieurs demandes avec méthode et rigueur.",
+      "Résolution de problèmes — Analyser rapidement les situations pour proposer des solutions.",
     ],
   },
   {
-    company: "Kizzle Studio",
-    role: "Software Developer",
-    period: "2025 — 2026",
-    description:
-      "Software Developer at Kizzle Studio, an e-commerce development studio specializing in Shopify and Ikas platforms. We build custom solutions from corporate invoicing workflows to AI-powered analytics for ambitious commerce brands.",
-    achievements: [
-      "Building custom Shopify and Ikas theme development solutions.",
-      "Developing corporate invoicing workflows and AI-powered analytics for e-commerce platforms.",
-      "Creating custom integrations and app development for e-commerce platforms.",
-      "Providing technical partnership for ambitious commerce brands.",
-    ],  
-  },
-  {
-    company: "Insider One",
-    role: "Software Developer",
-    period: "2024 — 2025",
-    description:
-      "At Insider One, I was part of the Partner Solution Development team, where I contributed to the development of B2B SaaS solutions tailored to our clients' needs. My role involved collaborating with cross-functional teams to deliver scalable and efficient software solutions that helped businesses grow and optimize their workflows.",
-    achievements: [
-      "Developed and customized solutions for enterprise clients to enhance their business operations.",
-      "Collaborated closely with product managers and designers to deliver user-centric features for B2B applications.",
-      "Implemented efficient and maintainable codebases using modern software development practices.",
-      "Actively improved existing systems by identifying bottlenecks and implementing optimizations.",
-    ],
-  },
-  {
-    company: "ION Labs",
-    role: "Frontend Engineer",
-    period: "Jan 2024 — Sep 2024",
-    description:
-      "Worked as a contract Frontend Engineer at ION Labs, building end-to-end applications with Next.js, Docker, and PostgreSQL that served thousands of users. Collaborated on internal tools and data platforms to streamline operations.",
-    achievements: [
-      "Built scalable full-stack applications using Next.js, Docker, and PostgreSQL serving thousands of users.",
-      "Developed data visualization dashboards that improved decision-making for management teams.",
-      "Integrated Paraşüt accounting APIs, reducing manual workload for client financial operations.",
-      "Improved application performance and user experience through targeted frontend optimizations.",
-      "Developed the mobile version of the internal operations tool using React Native + Expo, enabling field teams to access customer data, create records, and track tasks on the go.",
-    ],
-  },
-  {
-    company: "Utilify",
-    role: "Frontend Engineer",
-    period: "2023 — 2024",
+    company: "PrimoCom",
+    role: "Développeur Web · Collaborateur Externe ",
+    period: "2025 — Aujourd'hui",
     description: (
       <>
-        I joined{" "}
+        Après mon stage, j'ai eu l'opportunité de collaborer avec l'agence{" "}
         <a
-          href="https://utilify.xyz"
+          href="https://www.primocom.net"
           rel="noopener noreferrer"
           className="opacity-80 hover:opacity-100 transition-opacity underline decoration-foreground/30 underline-offset-2"
         >
-          Utilify
+          PrimoCom
         </a>{" "}
-        to build intuitive interfaces and pages for users and brands.
+        sur le développement et l'évolution de son site web officiel. J'interviens sur le développement de nouvelles fonctionnalités, les améliorations techniques, l'optimisation du référencement (SEO) ainsi que la maintenance continue du site afin de garantir ses performances et sa fiabilité.
+        Cette collaboration m'a permis de consolider mes compétences en développement web moderne et de travailler sur un projet réel répondant aux besoins d'une entreprise.
       </>
     ),
     achievements: [
-      "Successfully converted wireframe designs into active working user interface components.",
-      "Developed rule-based form builder for brands.",
-      "Developed and implemented user and enterprise dashboard interface, including all related pages, for user interaction and data visualization.",
-      "Stayed abreast of emerging trends and best practices in front-end development, continually honing skills and exploring innovative solutions to technical challenges.",
+      "Next.js — Développement de fonctionnalités modernes avec l'App Router.",
+      "React — Création d'interfaces dynamiques et réutilisables.",
+      "Tailwind CSS — Conception d'interfaces sobres, responsives et performantes.",
+      "Maintenance Web — Évolution continue et correction des problèmes techniques.",
       <>
         Developed the{" "}
         <a
@@ -94,6 +55,21 @@ const workExperiences = [
       </>,
     ],
   },
+
+  {
+    company: "Freelance",
+    role: "Développeur & Assistant Community Manager",
+    period: "2025 — AUjourd'hui",
+    description:
+      "En parallèle de mes projets personnels, j'accompagne différents clients sur des missions mêlant développement web, communication digitale et optimisation de leur présence en ligne. Cette expérience m'a permis de mieux comprendre les besoins des utilisateurs tout en renforçant ma capacité à créer des solutions adaptées, aussi bien sur le plan technique que sur celui de la communication.",
+    achievements: [
+      "Développement Web — Création et amélioration de sites répondant aux besoins des clients.",
+      "Communication digitale — Rédaction de contenus clairs et adaptés aux différentes audiences.",
+      "Expérience utilisateur — Amélioration des interactions pour une navigation plus fluide.",
+      "Relation client — Comprendre les attentes afin de proposer des solutions pertinentes.",
+      "Gestion de projet — Organiser les tâches et assurer le suivi des différentes missions.",
+    ],
+  },
 ];
 
 export function WorkClient() {
@@ -106,9 +82,9 @@ export function WorkClient() {
         className="mb-2"
       >
         <p className="text-[15px] leading-relaxed opacity-80">
-          On a mission to create impactful applications that engage users and
-          drive value for businesses. Here&apos;s a summary of my journey so
-          far.
+          Mon parcours dans le développement web s'est construit progressivement, à travers des expériences professionnelles, des projets concrets et une volonté constante d'apprendre.
+          Chaque étape m'a permis d'acquérir de nouvelles compétences, d'améliorer ma façon de travailler et de mieux comprendre les besoins des utilisateurs comme ceux des entreprises.
+          Aujourd'hui, je poursuis cette évolution en développant des applications web modernes, en explorant les possibilités offertes par l'intelligence artificielle et l'automatisation, tout en restant curieux des nouvelles technologies qui façonnent le web de demain.
         </p>
       </motion.header>
 
@@ -134,10 +110,13 @@ export function WorkClient() {
               </div>
             </header>
 
-            <p className="text-[15px] leading-relaxed opacity-80 mb-6">
+            <p className="text-[15px] leading-relaxed opacity-80 mb-4">
               {experience.description}
             </p>
 
+            <h5 className="font-medium text-xl mb1 flex items-center gap-2">
+                Technologies et compétences développées
+              </h5>
             <ul className="text-[15px] leading-relaxed opacity-80 space-y-2">
               {experience.achievements.map((achievement, i) => (
                 <li key={i} className="flex items-start">
@@ -149,6 +128,20 @@ export function WorkClient() {
           </motion.article>
         ))}
       </section>
+
+      <WavySeparator />
+
+      <motion.header
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+        className="mb-2"
+      >
+        <h4 className="font-medium text-xl mb-2 tracking-tight flex items-center gap-2">Aujourd'hui</h4>
+        <p className="text-[16px] leading-relaxed opacity-80">
+          Je continue d'approfondir mes compétences en développement web moderne, notamment autour de Next.js, Laravel, de l'intelligence artificielle et de l'automatisation. Mon objectif est de concevoir des applications toujours plus performantes, utiles et évolutives, tout en restant en veille permanente sur les technologies qui transforment le développement logiciel.
+        </p>
+      </motion.header>
     </main>
   );
 }

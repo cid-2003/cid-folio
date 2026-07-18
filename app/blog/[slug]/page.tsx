@@ -39,7 +39,7 @@ export async function generateMetadata({
     keywords,
   } = blog.metadata;
 
-  const blogUrl = `https://onurhan.dev/blog/${blog.slug}`;
+  const blogUrl = `https://cid-folio.vercel.app/blog/${blog.slug}`;
 
   return {
     title,
@@ -51,24 +51,24 @@ export async function generateMetadata({
       type: "article",
       publishedTime,
       ...(modifiedTime && { modifiedTime }),
-      authors: ["Onurhan Demir"],
+      authors: ["Cédrick Emmanuel"],
       url: blogUrl,
-      siteName: "Onurhan Demir",
-      locale: "en_US",
-      alternateLocale: ["tr_TR"],
+      siteName: "Cédrick Emmanuel",
+      locale: "fr_FR",
+      alternateLocale: ["en_US"],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      site: "@onurhan1337",
-      creator: "@onurhan1337",
+      site: "@cid-2003",
+      creator: "@cid_dev",
     },
     alternates: {
       canonical: blogUrl,
       languages: {
         en: blogUrl,
-        tr: blogUrl,
+        fr: blogUrl,
       },
     },
   };
@@ -104,20 +104,19 @@ export default async function BlogDetailPage({ params }: Props) {
     },
     author: {
       "@type": "Person",
-      name: "Onurhan Demir",
+      name: "Cédrick Emmanuel",
       url: baseUrl,
       sameAs: [
-        "https://github.com/onurhan1337",
-        "https://youtube.com/@onurhandev",
-        "https://x.com/onurhan1337",
+        "https://github.com/cid-2003",
+        "https://gravatar.com/cedrickdonald29",
       ],
     },
     publisher: {
       "@type": "Person",
-      name: "Onurhan Demir",
+      name: "Cédrick Emmanuel",
       url: baseUrl,
     },
-    inLanguage: "en-US",
+    inLanguage: "fr-FR",
     ...(blog.metadata.keywords && {
       keywords: Array.isArray(blog.metadata.keywords)
         ? blog.metadata.keywords.join(", ")

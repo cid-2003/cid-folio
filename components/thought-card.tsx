@@ -3,10 +3,10 @@ import { formatDate } from "@/lib/utils";
 import type { ThoughtCardProps } from "@/types";
 
 const typeLabels = {
-  code: "CODE",
-  idea: "IDEA",
-  quote: "QUOTE",
-  book: "BOOK",
+  développement: "DEVELOPPEMENT",
+  lecture: "LECTURE",
+  sport: "SPORT",
+  passions: "PASSIONS",
 };
 
 export const ThoughtCard = React.memo(

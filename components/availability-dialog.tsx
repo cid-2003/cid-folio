@@ -20,30 +20,30 @@ export function AvailabilityDialog({
       <DialogContent className="max-w-md" aria-describedby={undefined}>
         <DialogHeader>
           <DialogTitle className="text-xl font-medium tracking-tight mb-2">
-            Who am I
+            Qui suis-je ?
           </DialogTitle>
         </DialogHeader>
 
         <div className="space-y-6">
           <div className="space-y-4">
             <p className="text-[15px] leading-relaxed opacity-80">
-              Hi, I&apos;m Onurhan Demir — a <span className="font-medium">Developer Advocate &amp; Frontend Developer</span> at <span className="font-medium">ikas</span>, helping grow the developer ecosystem and build clean, useful products for the platform.
+              Salut, je suis Cédrick Emmanuel <span className="font-medium">Developpeur web spécialisé en </span> <span className="font-medium">Backend</span>. Je conçois des applications web modernes, performantes et évolutives en privilégiants un code propre, une architectures claire et une excellente expérience utilisateur.
             </p>
 
             <div>
               <p className="text-[15px] font-medium leading-relaxed opacity-90 mb-2">
-                What I do:
+                Ce que je fais:
               </p>
               <div className="text-[15px] leading-relaxed opacity-75 space-y-1 pl-1">
-                <p>• Developer relations &amp; ecosystem growth</p>
-                <p>• Frontend &amp; Studio development</p>
-                <p>• Technical content, guides &amp; examples</p>
-                <p>• UX-focused digital experiences</p>
+                <p>• Développement d'applications web avec Next.js, Laravel &amp; React</p>
+                <p>• Modélisation et gestion de bases de données avec Prisma, PostgreSQL &amp; MongoDB</p>
+                <p>• Déploiement d'applications et utilisation de Docker pour créer des environnements de développement fiables.</p>
+                <p>• Veille technologique et apprentissage continu afin de rester à jour sur les meilleures pratiques du développement web.</p>
               </div>
             </div>
 
             <p className="text-[15px] leading-relaxed opacity-80">
-              I love talking to developers, agencies, and merchants — sharing ideas, helping people build on ikas, and turning their feedback into better products. My inbox is always open.
+              J'aime relever des défis techniques et transformer des idées en solutions concrètes. Chaque projet est une opportunité d'apprendre, d'améliorer mes compétences et de créer des produits utiles qui répondent à de vrais besoins.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export function AvailabilityDialog({
 
           <div className="space-y-4">
             <p className="text-[15px] leading-[22px] opacity-90 font-medium tracking-[-0.6px]">
-              Building on ikas, have an idea, or just want to chat? Reach out — I&apos;d love to hear from you.
+              Que vous souhaitiez échanger sur un projet, discuter d'une opportunité professionnelle ou simplement parler de développement web, n'hésitez pas à me contacter. Ce sera un plaisir d'échanger avec vous.
             </p>
 
             <div className="flex flex-col gap-3">
@@ -61,7 +61,7 @@ export function AvailabilityDialog({
                 variant={'fancy'}
               >
                 <Link
-                  href="mailto:onurhandtr@gmail.com"
+                  href="mailto:cedrickemmanuel69@gmail.com"
                   className="flex items-center gap-2"
                 >
                   <Mail size={18} />

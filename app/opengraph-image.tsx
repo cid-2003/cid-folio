@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const dynamic = "force-static";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Onurhan Demir - Developer Advocate & Frontend Developer";
+export const alt = "Cédrick Emmanuel - Developpeur web ";
 
 export default function OGImage() {
   return new ImageResponse(
@@ -37,7 +37,7 @@ export default function OGImage() {
               fontWeight: 500,
             }}
           >
-            onurhan.dev
+            cedrickdonald29.link
           </span>
         </div>
         <div
@@ -60,7 +60,7 @@ export default function OGImage() {
               margin: 0,
             }}
           >
-            Onurhan Demir
+            Cédrick Emmanuel
           </h1>
           <p
             style={{
@@ -70,7 +70,7 @@ export default function OGImage() {
               marginTop: "16px",
             }}
           >
-            Developer Advocate & Frontend Developer
+            Developpeur web 
           </p>
         </div>
       </div>

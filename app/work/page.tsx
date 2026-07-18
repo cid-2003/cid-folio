@@ -1,29 +1,32 @@
 import Container from "@/components/shared/container";
 import type { Metadata } from "next";
 import { WorkClient } from "./work-client";
+import { CTA } from "@/components/cta";
+import Social from "@/components/social";
+import Script from "next/script";
+import { WavySeparator } from "@/components/shared/wavy-separator";
 
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Onurhan Demir's professional experience and work history. Developer Advocate & Frontend Developer at ikas, founder of Kizzle Studio, former Software Developer at Insider One, Frontend Engineer at ION Labs and Utilify. Building e-commerce solutions and web applications.",
+    "Cédrick Emmanuel Développeur Web orienté Backend.",
   keywords: [
-    "Onurhan Demir Work",
-    "Onurhan Demir Experience",
-    "Onurhan Demir Career",
-    "ikas",
-    "Kizzle Studio",
-    "ION Labs",
-    "Software Developer Turkey",
-    "Full Stack Developer Experience",
+    "Cédrick Emmanuel Work",
+    "Cédrick Emmanuel Experience",
+    "Cédrick Emmanuel Career",
+    "PrimoCom",
+    "SAV+",
+    "Developpeur web | Cotonou",
+    "Parcours de développeur web backend",
   ],
   openGraph: {
-    title: "Work | Onurhan Demir",
+    title: "Work | Cédrick Emmanuel",
     description:
-      "Onurhan Demir's professional experience and work history. Developer Advocate & Frontend Developer at ikas, founder of Kizzle Studio, former Frontend Engineer at ION Labs, specializing in e-commerce and full-stack development.",
-    url: "https://onurhan.dev/work",
+      "Cédrick Emmanuel Développeur Web orienté Backend.",
+    url: "https://cid-folio.vercel.app/work",
   },
   alternates: {
-    canonical: "https://onurhan.dev/work",
+    canonical: "https://cid-folio.vercel.app/work",
   },
 };
 
@@ -31,6 +34,11 @@ export default function Work() {
   return (
     <Container size="large">
       <WorkClient />
+      <br />
+      <WavySeparator />
+      <br />
+      <CTA />
+      <Social />            
     </Container>
   );
 }

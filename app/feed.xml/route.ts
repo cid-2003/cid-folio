@@ -37,7 +37,7 @@ export async function GET() {
         post.metadata.summary
       )}]]></description>
       <pubDate>${pubDate}</pubDate>
-      <dc:creator><![CDATA[Onurhan Demir]]></dc:creator>
+      <dc:creator><![CDATA[Cédrick Emmanuel]]></dc:creator>
       <dc:language>${language}</dc:language>
       ${modifiedDate ? `<dc:date>${modifiedDate}</dc:date>` : ""}
       <content:encoded><![CDATA[${escapeCdata(
@@ -53,18 +53,18 @@ export async function GET() {
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title><![CDATA[Onurhan Demir - Blog]]></title>
+    <title><![CDATA[Cédrick Emmanuel - Blog]]></title>
     <link>${baseUrl}/blog</link>
     <description><![CDATA[Software development articles, tutorials, and insights on React, Next.js, TypeScript, and modern web technologies.]]></description>
-    <language>en-us</language>
+    <language>en-us-fr</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${baseUrl}/feed.xml" rel="self" type="application/rss+xml" />
-    <managingEditor>onurhan@onurhan.dev (Onurhan Demir)</managingEditor>
-    <webMaster>onurhan@onurhan.dev (Onurhan Demir)</webMaster>
-    <copyright>Copyright ${new Date().getFullYear()} Onurhan Demir</copyright>
+    <managingEditor>cedrickemmanuel69@gmail.com (Cédrick Emmanuel)</managingEditor>
+    <webMaster>cedrickemmanuel69@gmail.com (Cédrick Emmanuel)</webMaster>
+    <copyright>Copyright ${new Date().getFullYear()} Cédrick Emmanuel</copyright>
     <image>
       <url>${baseUrl}/logo.svg</url>
-      <title>Onurhan Demir</title>
+      <title>Cédrick Emmanuel</title>
       <link>${baseUrl}</link>
     </image>
     ${rssItems}

@@ -2,27 +2,28 @@ import Container from "@/components/shared/container";
 import { ProjectsClient } from "./projects-client";
 import { getAllProjects } from "@/lib/projects";
 import type { Metadata } from "next";
+import { WavySeparator } from "@/components/shared/wavy-separator";
+import { CTA } from "@/components/cta";
+import Social from "@/components/social";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description:
-    "A collection of projects I've worked on, including e-commerce platforms, web applications, and open source contributions.",
+  description: "Une collection des projets sur lesquelles j'ai travaillées.",
   keywords: [
-    "Onurhan Demir Projects",
-    "Software Developer Projects",
+    "Cédrick Emmanuel Projects",
+    "Developpeur web Projects",
     "Web Development Projects",
     "Portfolio Projects",
-    "Shopify Projects",
+    "Laravel Projects",
     "Next.js Projects",
   ],
   openGraph: {
-    title: "Projects | Onurhan Demir",
-    description:
-      "A collection of projects I've worked on, including e-commerce platforms, web applications, and open source contributions.",
-    url: "https://onurhan.dev/projects",
+    title: "Projects | Cédrick Emmanuel",
+    description: "Une collection des projets sur lesquelles j'ai travaillées.",
+    url: "https://cid-folio.vercel.app/projects",
   },
   alternates: {
-    canonical: "https://onurhan.dev/projects",
+    canonical: "https://cid-folio.vercel.app/projects",
   },
 };
 
@@ -32,6 +33,11 @@ export default function ProjectsPage() {
   return (
     <Container size="large">
       <ProjectsClient projects={projects} />
+
+      <WavySeparator />
+
+      <CTA />
+      <Social />  
     </Container>
   );
 }

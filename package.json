@@ -1,7 +1,7 @@
 {
-  "author": "Onurhan Demir",
-  "description": "Onurhan Demir - Software Developer",
-  "name": "my-website",
+  "author": "Cédrick Emmanuel",
+  "description": "Cédrick Emmanuel | Developpeur Web",
+  "name": "cid-folio",
   "version": "0.3.0",
   "private": true,
   "engines": {

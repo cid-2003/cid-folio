@@ -33,9 +33,9 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
     title: `${project.title} | Projects`,
     description: project.description,
     openGraph: {
-      title: `${project.title} | Onurhan Demir`,
+      title: `${project.title} | Cédrick Emmanuel`,
       description: project.description,
-      url: `https://onurhan.dev/projects/${project.slug}`,
+      url: `https://cid-folio.vercel.app/projects/${project.slug}`,
     },
   };
 }
