@@ -29,7 +29,8 @@ import type { LinkCardProps, BuyMeACoffeeProps } from "@/types";
 
 const LONG_CODE_THRESHOLD = 15;
 
-function Table({ data }: { data: TableData }) {
+function Table({ data }: { data?: TableData }) {
+  if (!data) return null;
   const headers = data.headers.map((header, index) => (
     <th
       key={index}
