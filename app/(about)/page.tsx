@@ -20,10 +20,10 @@ export const metadata: Metadata = {
     title: "About | Cédrick Emmanuel",
     description:
       "Cédrick Emmanuel est un Développeur Web orienté Backend, avec une bonne maîtrise du Frontend.",
-    url: "https://onurhan.dev",
+    url: "https://cedrick.dev",
   },
   alternates: {
-    canonical: "https://onurhan.dev",
+    canonical: "https://cedrick.dev",
   },
 };
 
@@ -33,7 +33,7 @@ const structuredData = {
   name: "Cédrick Emmanuel",
   alternateName: "Cid",
   jobTitle: "Developpeur Web & Backend Developpeur",
-  url: "https://onurhan.dev",
+  url: "https://cedrick.dev",
   description:
     "Je transforme des idées en applications web modernes grâce à Next.js, Laravel et React etc...",
   knowsAbout: [

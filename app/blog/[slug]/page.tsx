@@ -84,7 +84,7 @@ export default async function BlogDetailPage({ params }: Props) {
 
   const headings = extractHeadings(blog.content);
   const modifiedAt = blog.metadata.modifiedAt;
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://onurhan.dev";
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://cedrick.dev";
   const blogUrl = `${baseUrl}/blog/${blog.slug}`;
 
   const blogPostJsonLd = {

@@ -8,7 +8,7 @@ function detectLanguage(text: string): "tr" | "en" {
 }
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://onurhan.dev";
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://cedrick.dev";
   const posts = await getAllBlogPosts();
 
   const rssItems = posts

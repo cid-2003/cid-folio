@@ -6,7 +6,7 @@ import { Header } from "@/components/header";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_APP_URL || "https://onurhan.dev"
+    process.env.NEXT_PUBLIC_APP_URL || "https://cedrick.dev"
   ),
   title: {
     default: "Cédrick Emmanuel - Developpeur web  at ikas",
@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     "Developeur Web",
     "MISSEHOUNGBE Cédrick Emmanuel | Developpeur Cotonou",
   ],
-  authors: [{ name: "Cédrick Emmanuel", url: "https://onurhan.dev" }],
+  authors: [{ name: "Cédrick Emmanuel", url: "https://cedrick.dev" }],
   creator: "Cédrick Emmanuel",
   publisher: "Cédrick Emmanuel",
   openGraph: {
     title: "Cédrick Emmanuel - Developpeur web  at ikas",
     description:
       "Cédrick Emmanuel is a Developpeur web  at ikas, growing the developer ecosystem and building e-commerce products and experiences.",
-    url: "https://onurhan.dev",
+    url: "https://cedrick.dev",
     siteName: "Cédrick Emmanuel - Developpeur web",
     locale: "en_FR",
     alternateLocale: ["tr_TR"],
@@ -53,12 +53,12 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/logo.svg",
-    shortcut: "/logo.svg",
-    apple: "/logo.svg",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
     other: {
       rel: "icon",
-      url: "/logo.svg",
+      url: "/logo.png",
     },
   },
   twitter: {
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     google: "K1pkJ72cY3DylswXke2MHJGxmjJ91WXwgozcCICvFrU",
   },
   alternates: {
-    canonical: "https://onurhan.dev",
+    canonical: "https://cedrick.dev",
     languages: {
       "en-US": "https://cid_folio",
       "tr-TR": "https://cid_folio",
@@ -96,7 +96,7 @@ export default function RootLayout({
     name: "Cédrick Emmanuel",
     alternateName: "Onurhan",
     jobTitle: "Developpeur web ",
-    url: "https://onurhan.dev",
+    url: "https://cedrick.dev",
     description:
       "Developpeur web  at ikas, growing the developer ecosystem and building e-commerce products and experiences. Expert in React, Next.js, TypeScript, and modern web technologies.",
     knowsAbout: [

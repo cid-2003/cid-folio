@@ -34,7 +34,7 @@ export const dynamic = "force-static";
 
 export default async function Blog() {
   const posts = await getAllBlogPostsList();
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://onurhan.dev";
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "https://cedrick.dev";
 
   const blogCollectionJsonLd = {
     "@context": "https://schema.org",

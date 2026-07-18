@@ -17,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: "https://cid-folio.vercel.app/sitemap.xml",
-    host: "https://onurhan.dev",
+    host: "https://cedrick.dev",
   };
 }

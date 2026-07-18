@@ -4,7 +4,7 @@ import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://onurhan.dev";
+  const baseUrl = "https://cedrick.dev";
 
   const allBlogPosts = await getAllBlogPosts();
   const blogs = allBlogPosts.map((blog) => ({
